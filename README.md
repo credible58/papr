@@ -16,8 +16,6 @@ The program accesses the packet data using a new version of Wireshark Sharkd run
 ## Sharkd Installation
 
 Sharkd is no longer shipped in the binary installation package and this new version of Sharkd is not yet merged into the main Wireshark code.  Therefore, you will need to:
-No longer in the MSI -> must be built from source
-Sharkd used here is not yet merged into the Wireshark master, so:
 
 * Clone the Wireshark master in the normal way
   * Check that it builds OK
