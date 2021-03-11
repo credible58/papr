@@ -1,0 +1,204 @@
+> python main.py
+
+PACKET ANALYSIS PREPARATION REPORT
+
+Summary
+-------
+
+Filename:     skinny_and_ica_slice_100k.pcapng
+No of frames: 99996
+Start time:   Oct  1, 2014 10:47:23.612964000 GMT Summer Time
+End time:     Oct  1, 2014 10:51:27.143488000 GMT Summer Time
+Duration:     243.530524 s
+
+Capture Quality
+---------------
+
+Packets missed:       40
+Duplicate packets:    0
+Duplicates max delta: 0.0
+
+Duplicate packet counts are based on TCP only, and so the actual
+number of duplicate packets may be higher than shown here.
+
+Service Endpoints
+-----------------
+
+| Proto    | IP Addr            | Port     |
++----------+--------------------+----------+
+| TCP      | 10.170.161.31      | 5061     |
+| TCP      | 10.170.161.33      | 7075     |
+| TCP      | 10.170.161.34      | 443      |
+| TCP      | 10.170.161.50      | 8080     |
+| TCP      | 10.170.33.23       | 443      |
+| TCP      | 10.170.33.50       | 8080     |
+| TCP      | 10.170.76.107      | 445      |
+| TCP      | 10.170.76.108      | 445      |
+| TCP      | 10.170.76.14       | 1494     |
+| TCP      | 10.170.76.158      | 443      |
+| TCP      | 10.170.76.21       | 1494     |
+| TCP      | 10.170.76.22       | 1494     |
+| TCP      | 10.170.76.26       | 1494     |
+| TCP      | 10.170.76.29       | 1494     |
+| TCP      | 10.170.76.56       | 1494     |
+| TCP      | 10.170.76.57       | 1494     |
+| TCP      | 10.170.76.58       | 1494     |
+| TCP      | 10.170.76.61       | 1494     |
+| TCP      | 10.170.92.20       | 139      |
+| TCP      | 10.170.92.21       | 88       |
+| TCP      | 10.180.128.156     | 443      |
+| TCP      | 10.180.130.156     | 443      |
+| TCP      | 10.180.131.155     | 443      |
+| TCP      | 10.180.132.156     | 443      |
+| TCP      | 10.180.134.157     | 443      |
+| TCP      | 10.180.159.46      | 443      |
+| TCP      | 122.50.127.66      | 443      |
+| TCP      | 172.100.51.254     | 2000     |
+| TCP      | 172.100.51.38      | 51055    |
+| TCP      | 172.100.51.55      | 4000     |
+| TCP      | 184.150.236.66     | 443      |
+| TCP      | 196.26.220.66      | 443      |
+| TCP      | 201.94.155.66      | 443      |
+| TCP      | 202.167.250.98     | 443      |
+| TCP      | 202.79.203.98      | 443      |
+| TCP      | 46.255.41.2        | 443      |
+| TCP      | 63.245.217.181     | 80       |
+| TCP      | 69.10.152.66       | 443      |
+| TCP      | 69.174.87.75       | 443      |
+| TCP      | 72.37.244.163      | 443      |
+| TCP      | 80.254.145.118     | 80       |
+| TCP      | 80.254.148.194     | 443      |
+| TCP      | 80.254.150.66      | 443      |
+| TCP      | 80.254.154.66      | 443      |
+| TCP      | 80.254.155.66      | 443      |
+| UDP      | 10.170.157.5       | 5246     |
+| UDP      | 10.170.157.5       | 5247     |
+| UDP      | 10.170.92.20       | 389      |
+| UDP      | 10.170.92.20       | 53       |
+| UDP      | 10.170.92.5        | 53       |
+| UDP      | 172.100.51.14      | 123      |
+| UDP      | 172.100.51.253     | 123      |
+| UDP      | 172.100.51.253     | 161      |
+| UDP      | 172.100.51.254     | 2000     |
+| UDP      | 172.100.51.35      | 123      |
+| UDP      | 172.100.51.36      | 123      |
+| UDP      | 172.100.51.38      | 137      |
+| UDP      | 172.100.51.38      | 138      |
+| UDP      | 172.100.51.39      | 123      |
+| UDP      | 172.100.51.62      | 67       |
+* No service endpoints identified
+
+Route Stability
+---------------
+
+This table shows the level of variation in TTL value along a route.
+A value of zero means no change was detected.  The higher the std
+value, the greater the level of variance.
+
+                               min  max        std
+ip.src         ip.dst                             
+10.170.161.50  172.100.51.38   124  252  63.825715
+10.170.33.23   172.100.51.35   119  246  47.662251
+10.170.33.50   172.100.51.38   122  250  63.626922
+10.170.92.20   172.100.51.38   124  125   0.488504
+10.170.92.5    172.100.51.38   123  124   0.501757
+               172.100.51.5    123  124   0.547723
+172.100.51.107 172.100.51.254   31   63   8.096306
+172.100.51.120 172.100.51.254   31   63   4.797997
+172.100.51.254 172.100.51.107  254  255   0.334607
+               172.100.51.120  254  255   0.178351
+               172.100.51.66   254  255   0.108930
+               172.100.51.99   254  255   0.264786
+172.100.51.66  172.100.51.254   31   63   3.171377
+172.100.51.99  172.100.51.254   31   63   6.415625
+
+NB: The Route Stability assessment is only valid for the portion of the
+route from the source IP to the point where the packets were captured.
+
+
+Packet Loss
+-----------
+
+Excessive TCP Retransmissions
+
+Typically, we are interested in TCP retransmissions and Dup ACKs for each
+TCP connection, but here we are using this information as an indication of
+packet loss.  For that reason, we aggregate these numbers for all TCP traffic
+between IP address pairs.
+
+* No TCP retransmissions seen
+
+Excessive DUP ACKs
+            ip.src          ip.dst  # of Dup ACKs
+0    10.170.161.31   172.100.51.38             11
+1    10.170.161.33   172.100.51.38             24
+2    10.170.161.34   172.100.51.38             19
+3    10.170.161.50   172.100.51.38            144
+4     10.170.33.23   172.100.51.35             72
+..             ...             ...            ...
+101  172.100.51.88  172.100.51.254             34
+102  172.100.51.90  172.100.51.254             34
+103  172.100.51.92  172.100.51.254             35
+104  172.100.51.93  172.100.51.254             39
+105  172.100.51.99  172.100.51.254             97
+
+[106 rows x 3 columns]
+
+
+DNS
+---
+
+DNS Servers Seen
+
+        IP Addr  # of Requests
+0  10.170.92.20              2
+1   10.170.92.5             84
+
+DNS Servers Not Responding
+
+* No DNS requests with missing responses seen
+
+DNS Service Errors
+
+* To be completed
+
+
+DNS Request Latency
+
+              min_ms  max_ms  mean_ms  p95_ms
+ip.dst                                       
+10.170.92.20    18.4    19.0     18.7    18.9
+10.170.92.5     24.4   140.4     28.8    28.7
+
+Service Performance
+-------------------
+
+                            min_ms   max_ms  mean_ms   p95_ms
+ip.dst         tcp.dstport                                   
+10.170.92.21   88             19.2     19.2     19.2     19.2
+10.170.92.20   139            18.5     18.9     18.6     18.8
+10.170.161.34  443            18.0    115.7     35.6     91.9
+10.170.33.23   443            23.6    583.3     55.1    101.3
+10.170.76.158  443            24.6     53.6     33.3     50.0
+10.170.76.14   1494            0.2  14605.0    812.0   5866.0
+10.170.76.21   1494            0.2  26912.5     73.1    108.1
+10.170.76.22   1494            0.6  16715.6    833.3   5396.1
+10.170.76.26   1494            0.1   7937.8     19.7     31.2
+10.170.76.29   1494            0.3  12545.2    119.1    467.9
+10.170.76.56   1494            0.0  20646.6     57.7     58.5
+10.170.76.57   1494            0.0   9992.1     52.4    187.5
+10.170.76.58   1494            7.5   8230.7    280.6     31.0
+10.170.76.61   1494           18.8     21.9     19.9     21.6
+172.100.51.254 2000            5.4  30030.0  13773.6  25799.1
+172.100.51.55  4000            0.1      0.2      0.2      0.2
+10.170.161.31  5061         2719.5  15092.0   8905.8  14473.4
+10.170.161.33  7075           19.1   1418.5    177.2    861.4
+10.170.161.50  8080           18.0     46.6     24.8     44.9
+10.170.33.50   8080           24.2   3032.7     42.1     65.5
+
+Use the following details to set the TRANSUM dissector preferences in Wireshark.
+
+TCP service ports: 139,1494,2000,4000,443,445,5061,51055,7075,80,8080,88
+
+
+Process finished with exit code 0
