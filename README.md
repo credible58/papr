@@ -20,11 +20,11 @@ No longer in the MSI -> must be built from source
 Sharkd used here is not yet merged into the Wireshark master, so:
 
 * Clone the Wireshark master in the normal way
- - Check that it builds OK
+  * Check that it builds OK
 * Download sharkd_session.c from https://gitlab.com/credible58/wireshark/-/tree/issue17235 and replace the existing file with this version
- - Build again
- - Start using Sharkd
+  * Build again
+  * Start using Sharkd
 * Alternative approach
- - Build Wireshark from source in the normal way
- - Modify the Python code used here to work with the existing Sharkd API
+  * Build Wireshark from source in the normal way
+  * Modify the Python code used here to work with the existing Sharkd API
 
